@@ -6,7 +6,16 @@ All projects for Graph Algorithms classes conducted by dr hab. Katarzyna Rybarcz
 
 [DFS - Finding all connected components in graph](algorithms/dfs.py)
 
-[BST Algorithm](algorithms/bst.py)
-
 [Dijkstra and Bellman-Ford algorithms](algorithms/dijkstra_bellman.py)
 
+[BST Algorithm](algorithms/bst.py)
+
+[BST random generating](algorithms/random_bst.py)
+
+[All spanning trees](algorithms/spanning_trees.py)
+
+[Hungarian algorithm](algorithms/hungarian.py)
+
+[Kuhn-Munkers algorithm](algorithms/kuhn_munkers.py)
+
+[Hamilton cycles](algorithms/hamilton.py)
