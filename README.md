@@ -8,5 +8,5 @@ All projects for Graph Algorithms classes conducted by dr hab. Katarzyna Rybarcz
 
 [BST Algorithm](algorithms/bst.py)
 
-[Dijkstra and Bellman-Ford algorithms](algorithms/dijkstra_bellman)
+[Dijkstra and Bellman-Ford algorithms](algorithms/dijkstra_bellman.py)
 
