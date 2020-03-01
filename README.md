@@ -19,3 +19,5 @@ All projects for Graph Algorithms classes conducted by dr hab. Katarzyna Rybarcz
 [Kuhn-Munkers algorithm](algorithms/kuhn_munkers.py)
 
 [Hamilton cycles](algorithms/hamilton.py)
+
+[Max Flow - Min Cut](algorithms/maximum_flow.py)
