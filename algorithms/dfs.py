@@ -10,12 +10,12 @@ def DFS(graph, start_vertex):
 
         if vertex not in visited:
             visited.append(vertex)
-            result.append(vertex)
+            result.append(vertex + 1)
             for v in graph[vertex]:
                 if v not in visited:
                     my_stack = [v] + my_stack
 
-    return result
+    return visited,result
 
 
 def check_dfs(G, vertexes):
@@ -36,9 +36,9 @@ def check_dfs(G, vertexes):
     Powtarzane jest to tak długo dopóki lista wierzchołków nie jest pusta.
     """
     while vertexes:
-        result = DFS(graph,vertexes[0])
+        visited,result = DFS(graph,vertexes[0])
         consist_comp.append(result)
-        for vertex in result:
+        for vertex in visited:
             vertexes.remove(vertex)
     return consist_comp
  
@@ -56,6 +56,8 @@ if __name__ == "__main__":
     vertexes = [i for i in range(len(graph))]
     result = check_dfs(graph,vertexes)
     all_vertexes = sum(result, [])
+    #for i in range(len(all_vertexes)):
+        #all_vertexes[i] += 1
     
     print(f'Wierzcholki w kolejnosci ich rozpatrywania:\n{print_list(all_vertexes)}')
     print(f'Liczba skladowych spojnosci: {len(result)}')
