@@ -50,7 +50,6 @@ class Hamilton:
                     S.remove(u)
                     if S:
                         print(f'{self.unpack(S)}')
-                    if S:
                         w = S[-1]
                         temp = [item for item in self.graph.get(w,None) if item not in S]
                         if u in temp and u != temp[-1]:
