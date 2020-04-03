@@ -13,9 +13,9 @@ class Hungarian:
 
         self.p = [None for _ in range(len(vertices_x))]
 
-        skoj = True
+        flag = True
 
-        while len(self.edges) != len(vertices_x) and skoj is True:
+        while len(self.edges) != len(vertices_x) and flag is True:
             self.S = list()
             self.T = list()
             NS = list()
@@ -25,7 +25,7 @@ class Hungarian:
             self.S.append(u)
             self.procedure_status = False
 
-            while skoj is True and self.procedure_status is False:
+            while flag is True and self.procedure_status is False:
                 x = self.S.pop(0)
                 NS.append(x)
                 for y in next_x[x]:
@@ -42,7 +42,7 @@ class Hungarian:
                                     self.S.append(v)
                                     break
                 if not self.S and self.procedure_status is False:
-                    skoj = False
+                    flag = False
                     
         if len(self.edges) == len(vertices_x):
             print(f'Znalezlismy skojarzenie nasycajace zbior X:\n{self.unpack()}')
