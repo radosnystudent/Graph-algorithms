@@ -21,3 +21,5 @@ All projects for Graph Algorithms classes conducted by dr hab. Katarzyna Rybarcz
 [Hamilton cycles](algorithms/hamilton.py)
 
 [Max Flow - Min Cut](algorithms/maximum_flow.py)
+
+[Chinese postman problem](algorithms/chinese_postman.py)
